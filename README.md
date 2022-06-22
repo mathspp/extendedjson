@@ -13,7 +13,7 @@ python -m pip install extendedjson
 ```
 
 
-## Example extension
+## Example usage
 
 Suppose you want to extend the JSON format to handle complex numbers,
 which corresponds to the type `complex` in Python.
@@ -55,3 +55,8 @@ print(c_ == c)  # True
 ```
 
 Refer to [this article](https://mathspp.com/blog/custom-json-encoder-and-decoder) to learn more about the internal details of `extendedjson`.
+
+
+## Changelog
+
+Refer to the [CHANGELOG.md](CHANGELOG.md) file.
