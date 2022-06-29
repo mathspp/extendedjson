@@ -2,6 +2,15 @@
 
 <!--scriv-insert-here-->
 
+<a id='changelog-0.1.2'></a>
+# 0.1.2 — 2022-06-30
+
+## Added
+
+- 100% code coverage.
+- Code coverage reporting to tox.
+- Tests to cover encoding and decoding that fails.
+
 <a id='changelog-0.1.1'></a>
 # 0.1.1 — 2022-06-25
 

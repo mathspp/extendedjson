@@ -2,7 +2,7 @@
 This module defines the main mechanism to extend the JSON format.
 """
 
-__version__ = "0.1.1"
+__version__ = "0.1.2"
 
 import json
 
