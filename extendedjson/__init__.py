@@ -56,3 +56,47 @@ class ExtendedDecoder(json.JSONDecoder):
             return obj
         else:
             return decoder(obj)
+
+
+def dump(obj, fp, *, cls=json.JSONEncoder, **kwargs):
+    """Thin wrapper around `json.dump` with customisable default encoder."""
+    return json.dump(obj, fp, cls=cls, **kwargs)
+
+
+def dumps(obj, *, cls=json.JSONEncoder, **kwargs):
+    """Thin wrapper around `json.dumps` with customisable default encoder."""
+    return json.dumps(obj, cls=cls, **kwargs)
+
+
+def load(fp, *, cls=json.JSONDecoder, **kwargs):
+    """Thin wrapper around `json.load` with customisable default decoder."""
+    return json.load(fp, cls=cls, **kwargs)
+
+
+def loads(s, *, cls=json.JSONDecoder, **kwargs):
+    """Thin wrapper around `json.loads` with customisable default decoder."""
+    return json.loads(s, cls=cls, **kwargs)
+
+
+def register_encoder(encoder_cls):
+    """Decorator to register a new extended JSON encoder.
+
+    This decorator sets the decorated class as the default encoder used by the
+    functions `dump` and `dumps` provided in this module.
+    The decorated class is not modified and should be a subclass of ExtendedEncoder.
+    """
+    dump.__defaults__ = (encoder_cls,)
+    dumps.__defaults__ = (encoder_cls,)
+    return encoder_cls
+
+
+def register_decoder(decoder_cls):
+    """Decorator to register a new extended JSON decoder.
+
+    This decorator sets the decorated class as the default decoder used by the
+    functions `load` and `loads` provided in this module.
+    The decorated class is not modified and should be a subclass of ExtendedDecoder.
+    """
+    load.__defaults__ = (decoder_cls,)
+    loads.__defaults__ = (decoder_cls,)
+    return decoder_cls
