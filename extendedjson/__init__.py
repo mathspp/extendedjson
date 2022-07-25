@@ -58,22 +58,22 @@ class ExtendedDecoder(json.JSONDecoder):
             return decoder(obj)
 
 
-def dump(obj, fp, *, cls=json.JSONEncoder, **kwargs):  # pylint: disable=invalid-name
+def dump(obj, fp, cls=json.JSONEncoder, **kwargs):  # pylint: disable=invalid-name
     """Thin wrapper around `json.dump` with customisable default encoder."""
     return json.dump(obj, fp, cls=cls, **kwargs)
 
 
-def dumps(obj, *, cls=json.JSONEncoder, **kwargs):
+def dumps(obj, cls=json.JSONEncoder, **kwargs):
     """Thin wrapper around `json.dumps` with customisable default encoder."""
     return json.dumps(obj, cls=cls, **kwargs)
 
 
-def load(fp, *, cls=json.JSONDecoder, **kwargs):  # pylint: disable=invalid-name
+def load(fp, cls=json.JSONDecoder, **kwargs):  # pylint: disable=invalid-name
     """Thin wrapper around `json.load` with customisable default decoder."""
     return json.load(fp, cls=cls, **kwargs)
 
 
-def loads(s, *, cls=json.JSONDecoder, **kwargs):  # pylint: disable=invalid-name
+def loads(s, cls=json.JSONDecoder, **kwargs):  # pylint: disable=invalid-name
     """Thin wrapper around `json.loads` with customisable default decoder."""
     return json.loads(s, cls=cls, **kwargs)
 
