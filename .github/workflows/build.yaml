@@ -5,6 +5,7 @@ on:
     branches: [ main ]
   pull_request:
     branches: [ main ]
+  workflow-dispatch:
 
 jobs:
   build:
@@ -29,3 +30,9 @@ jobs:
 
       - name: Run tox
         run: tox
+
+      - name: Upload coverage to Codecov
+        uses: codecov/codecov-action@v1
+        if: contains(env.USING_COVERAGE, matrix.python-version)
+        with:
+            fail_ci_if_error: true
