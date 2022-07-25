@@ -24,7 +24,7 @@ jobs:
           python -m pip install poetry
 
       - name: Configure poetry
-        with:
+        env:
           pypi_token: ${{ secrets.PyPI_TOKEN }}
         run: poetry config pypi-token.pypi $pypi_token
 
