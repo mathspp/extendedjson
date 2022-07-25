@@ -2,6 +2,15 @@
 
 <!--scriv-insert-here-->
 
+<a id='changelog-0.1.3'></a>
+# 0.1.3 — 2022-07-25
+
+## Added
+
+- Added functions `dump`, `dumps`, `load`, and `loads`, that overload the standard functions of the same name in the `json` module.
+
+- CI through GitHub action that runs tox automatically.
+
 <a id='changelog-0.1.2'></a>
 # 0.1.2 — 2022-06-30
 

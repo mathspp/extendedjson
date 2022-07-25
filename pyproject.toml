@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "extendedjson"
-version = "0.1.2"
+version = "0.1.3"
 description = "Easily extend JSON to encode and decode arbitrary Python objects."
 authors = ["Rodrigo Girão Serrão <5621605+RodrigoGiraoSerrao@users.noreply.github.com>"]
 readme = "README.md"
