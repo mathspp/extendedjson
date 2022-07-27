@@ -2,11 +2,11 @@
 
  > Easily extend JSON to encode and decode arbitrary Python objects.
 
-[![PyPI Version][pypi-image]][pypi-url]
-[![Build Status][build-image]][build-url]
-[![Code Coverage][coverage-image]][coverage-url]
-[![][stars-image]][stars-url]
-[![][versions-image]][versions-url]
+[![PyPI version][pypi-image]][pypi-url]
+[![Build status][build-image]][build-url]
+[![Code coverage][coverage-image]][coverage-url]
+[![GitHub stars][stars-image]][stars-url]
+[![Support Python versions][versions-image]][versions-url]
 
 
 ## Getting started
@@ -76,7 +76,7 @@ Refer to the [CHANGELOG.md](CHANGELOG.md) file.
 [build-url]: https://github.com/mathspp/extendedjson/actions/workflows/build.yaml
 [coverage-image]: https://codecov.io/gh/mathspp/extendedjson/branch/main/graph/badge.svg
 [coverage-url]: https://codecov.io/gh/mathspp/extendedjson/
-[stars-image]: https://img.shields.io/github/stars/mathspp/extendedjson/
+[stars-image]: https://img.shields.io/github/stars/mathspp/extendedjson
 [stars-url]: https://github.com/mathspp/extendedjson
-[versions-image]: https://img.shields.io/pypi/pyversions/extendedjson/
+[versions-image]: https://img.shields.io/pypi/pyversions/extendedjson
 [versions-url]: https://pypi.org/project/extendedjson/
