@@ -15,7 +15,7 @@ scriv = {extras = ["toml"], version = "^0.15.2"}
 
 [tool.scriv]
 format = "md"
-version = "literal: extendedjson/__init__.py: __version__"
+version = "literal: src/extendedjson/__init__.py: __version__"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
